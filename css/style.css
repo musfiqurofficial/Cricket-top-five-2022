@@ -1,7 +1,23 @@
 .heading-text{
     font-size: 56px;
-    color: #FF5B00;
 }
-
-
-
+.caurosal-image{
+    height: 40vh;
+    object-fit: cover;
+    object-position: top;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+.card{
+    background-color: #222222;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0 0 15px #ffffff;
+}
+.top-heading{
+    background-color: #22222261;
+    border-radius: 10px;
+}
