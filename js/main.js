@@ -1,15 +1,24 @@
 document.getElementById("calculate-btn").addEventListener("click", function () {
-    const playerInputField = document.getElementById("player-field").value;
+    const playerInputFields = document.getElementById("player-field");
+    const playerInputField = playerInputFields.value;
+
     const playerCost = playerInputField * liArray.length;
     const playerTotalCost = document.getElementById("player-cost").innerHTML = playerCost;
 
+
+
     document.getElementById("total-calculate-btn").addEventListener("click", function () {
-        const managerFeeString = document.getElementById("manager-fee-field").value;
+        const managerFees = document.getElementById("manager-fee-field");
+        const managerFeeString = managerFees.value;
         const managerFee = parseInt(managerFeeString);
-        const coachFeeString = document.getElementById("coach-fee-field").value;
+        const coachFees = document.getElementById("coach-fee-field");
+        const coachFeeString = coachFees.value;
         const coachFee = parseInt(coachFeeString);
         const totalCost = playerCost + managerFee + coachFee;
         document.getElementById("total-cost").innerHTML = totalCost;
-    })
 
+        // managerFees.value = '';
+        // coachFees.value = '';
+    })
+    playerInputFields.value = '';
 })
