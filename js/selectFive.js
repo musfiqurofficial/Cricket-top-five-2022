@@ -1,14 +1,3 @@
-
-// function selectFive(element) {
-//     const selectFivePlayer = element.parentNode.children[0].innerText;
-
-//     const listParent = document.getElementById("olListPlayer");
-//     const li = document.createElement('li');
-//     li.innerText = selectFivePlayer;
-
-//     listParent.appendChild(li);
-// }
-
 const liArray = [];
 const allBtn = document.querySelectorAll('.my-btn-class');
 for (const btn of allBtn) {

@@ -1,6 +1,6 @@
 document.getElementById("calculate-btn").addEventListener("click", function () {
     const playerInputField = document.getElementById("player-field").value;
-    const playerCost = playerInputField * 5;
+    const playerCost = playerInputField * liArray.length;
     const playerTotalCost = document.getElementById("player-cost").innerHTML = playerCost;
 
     document.getElementById("total-calculate-btn").addEventListener("click", function () {
